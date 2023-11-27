@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grid</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="js/tailwind.config.js"></script>
+  </head>
+  <body class="px-4">
+    <h1 class="text-3xl my-4">Grid</h1>
+		<h2 class="text-2xl my-4">grid-template-columns</h2>
+    <!-- Grid 트랙의 크기들을 지정해주는 속성 -->
+
+		<!-- 
+			https://tailwindcss.com/docs/grid-template-cols 
+			- grid-cols-1
+			- grid-cols-2
+			- grid-cols-3
+			- grid-cols-4
+			- grid-cols-5
+			- grid-cols-6
+			- grid-cols-7
+			- grid-cols-8
+			- grid-cols-9
+			- grid-cols-10
+			- grid-cols-11
+			- grid-cols-12
+			- grid-cols-none
+		-->
+		<!-- https://tailwindcss.com/docs/gap -->
+		<div class="my-4 bg-fuchsia-300 grid grid-cols-3 gap-x-2 gap-y-2">
+			<div class="bg-orange-300 p-4 border border-slate-300">1</div>
+			<div class="bg-orange-300 p-4 border border-slate-300">2</div>
+			<div class="bg-orange-300 p-4 border border-slate-300">3</div>
+			<div class="bg-orange-300 p-4 border border-slate-300">4</div>
+			<div class="bg-orange-300 p-4 border border-slate-300">5</div>
+			<div class="bg-orange-300 p-4 border border-slate-300">6</div>
+			<div class="bg-orange-300 p-4 border border-slate-300">7</div>
+			<div class="bg-orange-300 p-4 border border-slate-300">8</div>
+			<div class="bg-orange-300 p-4 border border-slate-300">9</div>
+			<div class="bg-orange-300 p-4 border border-slate-300">10</div>
+		</div>
+
+
+		<h2 class="text-2xl my-4">grid-template-rows</h2>
+		<!-- 
+			https://tailwindcss.com/docs/grid-template-rows 
+			- grid-rows-1
+			- grid-rows-2
+			- grid-rows-3
+			- grid-rows-4
+			- grid-rows-5
+			- grid-rows-6
+			- grid-rows-none	
+		-->
+		<!-- 
+			https://tailwindcss.com/docs/grid-auto-flow
+			잔여 셀 배치 관련 속성.
+			grid-rows-{n}만 작성하는 경우, grid-flow-col 꼭 작성할 것!
+			- grid-flow-row	-> grid-auto-flow: row;
+			- grid-flow-col	-> grid-auto-flow: column;
+			- grid-flow-dense	-> grid-auto-flow: dense;
+			- grid-flow-row-dense	-> grid-auto-flow: row dense;
+			- grid-flow-col-dense	-> grid-auto-flow: column dense;
+		 -->
+    <div class="my-4 bg-fuchsia-300 grid grid-rows-3 grid-flow-col gap-2">
+      <div class="bg-orange-300 p-4 border border-slate-300">1</div>
+      <div class="bg-orange-300 p-4 border border-slate-300">2</div>
+      <div class="bg-orange-300 p-4 border border-slate-300">3</div>
+      <div class="bg-orange-300 p-4 border border-slate-300">4</div>
+      <div class="bg-orange-300 p-4 border border-slate-300">5</div>
+      <div class="bg-orange-300 p-4 border border-slate-300">6</div>
+      <div class="bg-orange-300 p-4 border border-slate-300">7</div>
+      <div class="bg-orange-300 p-4 border border-slate-300">8</div>
+      <div class="bg-orange-300 p-4 border border-slate-300">9</div>
+      <div class="bg-orange-300 p-4 border border-slate-300">10</div>
+    </div>
+		
+
+		<h2 class="text-2xl my-4">colspan | rowspan</h2>
+		<!-- 
+			https://tailwindcss.com/docs/grid-row
+		-->
+		<div class="my-4 bg-fuchsia-300 grid grid-rows-3 grid-flow-col gap-2">
+			<div class="bg-orange-300 p-4 row-span-3 ">01</div>
+			<div class="bg-orange-300 p-4 col-span-2 ">02</div>
+			<div class="bg-orange-300 p-4 row-span-2 col-span-2 ">03</div>
+		</div>
+
+		<h2 class="text-2xl my-4">grid-auto-flow : row dense | column dense</h2>
+		<!-- 
+			https://tailwindcss.com/docs/grid-auto-flow 
+			셀이 딱 떨어지지 않아 공란이 생기는 경우, 빽빽히 채워주는 설정 
+			- grid-flow-row-dense	grid-auto-flow: row dense;
+			- grid-flow-col-dense	grid-auto-flow: column dense;
+		-->
+		<div class="my-4 bg-fuchsia-300 grid grid-cols-3 grid-rows-3 grid-flow-row-dense gap-2">
+      <div class="bg-orange-300 p-4 border border-slate-300 col-span-2">1</div>
+      <div class="bg-orange-300 p-4 border border-slate-300 col-span-2">2</div>
+      <div class="bg-orange-300 p-4 border border-slate-300">3</div>
+			<div class="bg-orange-300 p-4 border border-slate-300">4</div>
+      <div class="bg-orange-300 p-4 border border-slate-300">5</div>
+      <div class="bg-orange-300 p-4 border border-slate-300">6</div>
+		</div>
+
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </body>
+</html>

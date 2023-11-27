@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid - gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+</head>
+<body class="px-4">
+  <h1 class="text-3xl my-4">Grid - gallery</h1>
+  <!-- 1. col-span, row-span 구현 -->
+  <!-- 2. 반은형 적용 (sm:640px, md:768px) (반응형은 mobile-first로 작성후, 화면크기(min breakpoint)에 맞게 layout을 지정)-->
+  <ul class="grid md:grid-cols-3 md:auto-rows-[150px] gap-2 grid-cols-1 auto-rows-max my-4">
+    <li class="overflow-hidden row-span-2 col-span-2"><img class="w-full" src="images/flower1.PNG" alt=""></li>
+    <li class="overflow-hidden"><img class="w-full" src="images/flower2.PNG" alt=""></li>
+    <li class="overflow-hidden"><img class="w-full" src="images/flower3.PNG" alt=""></li>
+    <li class="overflow-hidden"><img class="w-full" src="images/flower4.PNG" alt=""></li>
+    <li class="overflow-hidden col-span-2"><img class="w-full" src="images/flower5.PNG" alt=""></li>
+  </ul>
+  
+</body>
+</html>

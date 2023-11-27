@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS | Layout - menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+</head>
+<body class="px-4">
+  <h1 class="text-4xl my-4">Menu</h1>
+  <nav>
+    
+    <!-- 
+      https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state
+      부모요소 hover시 자식요소가 노출되야하는 경우 등...
+      - 부모요소 .group
+      - 자식요소 .group-hover:...
+     -->
+    <ul class="flex justify-center text-slate-500">
+      <li class="w-28 flex justify-center flex-wrap items-center h-12 bg-slate-400 border-r border-slate-500 rounded-l-md"><a class="hover:text-white block p-3 " href="#">Home</a></li>
+      <li class="w-28 flex justify-center flex-wrap items-center h-12 bg-slate-400 border-r border-slate-500"><a class="hover:text-white block p-3 " href="#">HTML</a></li>
+      <li class="group w-28 flex justify-center flex-wrap items-center h-12 bg-slate-400 border-r border-slate-500">
+        <a class="hover:text-white block p-3 " href="#">CSS</a>
+        <ul class="hidden group-hover:block">
+          <li class="bg-slate-400 w-28 h-12 flex justify-center items-center border-t border-slate-500 rounded-t-md"><a class="hover:text-white" href="#">Bootstrap</a></li>
+          <li class="bg-slate-400 w-28 h-12 flex justify-center items-center border-t border-slate-500 rounded-b-md"><a class="hover:text-white" href="#">Foundation</a></li>
+        </ul>
+      </li>
+      <li class="group w-28 flex justify-center flex-wrap items-center h-12 bg-slate-400 border-r border-slate-500">
+        <a class="hover:text-white block p-3 " href="#">Javascript</a>
+        <ul class="hidden group-hover:block">
+          <li class="bg-slate-400 w-28 h-12 flex justify-center items-center border-t border-slate-500 rounded-t-md"><a class="hover:text-white" href="#">React.js</a></li>
+          <li class="bg-slate-400 w-28 h-12 flex justify-center items-center border-t border-slate-500 rounded-b-md"><a class="hover:text-white" href="#">Vue.js</a></li>
+        </ul>
+      </li>
+      <li class="group w-28 flex justify-center flex-wrap items-center h-12 bg-slate-400 rounded-r-md">
+        <a class="hover:text-white block p-3 " href="#">jQuery</a>
+        <ul class="hidden group-hover:block">
+          <li class="bg-slate-400 w-28 h-12 flex justify-center items-center border-t border-slate-500 rounded-t-md"><a class="hover:text-white" href="#">multiselect.js</a></li>
+          <li class="bg-slate-400 w-28 h-12 flex justify-center items-center border-t border-slate-500 rounded-b-md"><a class="hover:text-white" href="#">gird.js</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS | Layout - Display</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+</head>
+<body class="p-4">
+  <h1 class="text-3xl">Layout - Display</h1>
+  <!-- 
+    inline요소 - display: inline; 
+      - span, a, img...
+
+    block요소 - display: block;
+      - hn, div, p, form...
+  --> 
+  <h2 class="text-2xl my-4">block</h2> 
+  <div class="inline bg-red-400">하나</div>
+  <div class="inline bg-red-500">둘</div>
+  <div class="inline bg-red-600">셋</div>
+  <div class="inline bg-red-700">넷</div>
+  <div class="inline bg-red-800">다섯</div>
+
+  <h2 class="text-2xl my-4">inline</h2> 
+  <span class="block w-40 h-40 p-1 bg-blue-400">하나</span>
+  <span class="block w-40 h-40 p-1 bg-blue-500">둘</span>
+  <span class="block w-40 h-40 p-1 bg-blue-600">셋</span>
+  <span class="block w-40 h-40 p-1 bg-blue-700">넷</span>
+  <span class="block w-40 h-40 p-1 bg-blue-800">다섯</span>
+  
+  <h2 class="text-2xl my-4">inline-block</h2> 
+  <div class="inline-block w-40 h-40 p-1 bg-green-400">하나</div>
+  <div class="inline-block w-40 h-40 p-1 bg-green-500">둘</div>
+  <div class="inline-block w-40 h-40 p-1 bg-green-600">셋</div>
+  <div class="inline-block w-40 h-40 p-1 bg-green-700">넷</div>
+  <div class="inline-block w-40 h-40 p-1 bg-green-800">다섯</div>
+
+  <h2 class="text-2xl my-4">요소숨기기</h2>
+  <!-- 
+    - hidden -> display: none; 차지하는 영역도 함께 제거.
+    - invisible -> visibility: hidden; 차지하는 영역은 남기고 제거.
+    - opcity-0 -> opacity: 0; 차지하는 영역도 남고, 투명도만 처리.
+  -->
+  <div class="hidden hover:block w-40 h-40 my-4 p-1 bg-yellow-500">display: none</div>
+  <hr>
+  <div class="invisible hover:visible w-40 h-40 my-4 p-1 bg-yellow-500">visibility: hidden</div>
+  <hr>
+  <div class="opacity-0 hover:opacity-100 w-40 h-40 my-4 p-1 bg-yellow-500">opacity: 0</div>
+  <hr>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

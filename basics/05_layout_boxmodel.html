@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS | Layout - BoxModel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+</head>
+<body class="p-4">
+  <h1 class="text-3xl mb-10">Layout - BoxModel</h1>
+  <!-- https://tailwindcss.com/docs/width -->
+  <!-- https://tailwindcss.com/docs/height -->
+  <!-- https://tailwindcss.com/docs/padding -->
+  <!-- https://tailwindcss.com/docs/border-width -->
+  <!-- https://tailwindcss.com/docs/border-color -->
+  <!-- https://tailwindcss.com/docs/border-style 생략 -->
+  <!-- https://tailwindcss.com/docs/margin -->
+  <!-- https://tailwindcss.com/docs/box-shadow -->
+  <!-- https://tailwindcss.com/docs/box-shadow-color -->
+  <div class="item w-40 h-40 bg-slate-500 p-4 m-4 border-4 border-black hover:shadow-2xl shadow-black">안녕</div>
+
+
+  <!-- 
+    non-replaced inline요소 (span, ..)
+    - width x
+    - height x
+    - padding O
+    - margin 좌우O
+
+    replaced inline요소 (img, textarea)
+    - width O
+    - height O
+    - 수직 margin이 적용된다.
+  -->
+  <!-- <span class="w-40 h-40 bg-cyan-500 p-4 m-4 border-4 border-black">Helloworld</span> -->
+  <img class="w-40 h-40 m-4 border-4 border-black p-4" src="../images/hyunta.jpg"/>
+</body>
+</html>

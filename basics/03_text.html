@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Tailwind CSS | Text</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+</head>
+<body class="p-4">
+  <h1 class="text-4xl">Text</h1>
+ 
+  <!-- https://tailwindcss.com/docs/text-decoration -->
+  <!-- text-decoration은 한번에 하나씩만 지정해야 한다. -->
+  <h2 class="text-4xl my-8 underline">봄여름가을겨울</h2>
+  <h2 class="text-4xl my-8 line-through">봄여름가을겨울</h2>
+  <a class="no-underline hover:underline text-blue-700" href="./">인덱스로 이동</a>
+  
+  
+  <!-- https://tailwindcss.com/docs/customizing-colors -->
+  <!-- https://tailwindcss.com/docs/text-color -->
+  <!-- HSB : 특정 색조(Hue)에 있어서 채도(Saturation)가 높아지다 밝기(Brightness)가 어두워지는 방향으로 숫자가 증가 -->
+  <div class="my-8">
+    <p class="text-red-50">Helloworld</p>
+    <p class="text-red-100">Helloworld</p>
+    <p class="text-red-200">Helloworld</p>
+    <p class="text-red-300">Helloworld</p>
+    <p class="text-red-400">Helloworld</p>
+    <p class="text-red-500">Helloworld</p>
+    <p class="text-red-600">Helloworld</p>
+    <p class="text-red-700">Helloworld</p>
+    <p class="text-red-800">Helloworld</p>
+    <p class="text-red-900">Helloworld</p>
+    <p class="text-red-950">Helloworld</p>
+  </div>
+
+  <!-- opacity값 조정 가능 -->
+  <div class="my-8">
+    <p class="text-sky-400/100">The quick brown fox...</p>
+    <p class="text-sky-400/75">The quick brown fox...</p>
+    <p class="text-sky-400/50">The quick brown fox...</p>
+    <p class="text-sky-400/25">The quick brown fox...</p>
+    <p class="text-sky-400/0">The quick brown fox...</p> 
+  </div>
+
+  <div class="my-8">
+    <p class="text-[#8f4dfc]">어떤 컬러</p>
+  </div>
+
+
+  <!-- text-shadow는 공식적으로 지원하지 않는다. -->
+  <div class="text-8xl text-white">
+    <p class="[text-shadow:_3px_3px_7px_gray]">HTML5</p>
+    <p class="text-orangered [text-shadow:_5px_5px_0_orange]">HTML5</p>
+  </div>
+
+</body>
+</html>

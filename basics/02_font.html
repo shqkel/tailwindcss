@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS | Font</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Gaegu:wght@300;400;700&family=Gowun+Dodum&family=Nanum+Brush+Script&family=Poor+Story&family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+</head>
+<body class="p-4">
+  <h1 class="text-3xl my-8">Font</h1>
+  <!-- h1 font-size : 32px (기본값)-->
+ 
+  <!-- https://tailwindcss.com/docs/font-size -->
+  <h1 class="text-3xl">Tailwind CSS</h1><!-- 30px -->
+  <h2 class="text-2xl">Tailwind CSS</h2><!-- 24px -->
+  <h3 class="text-xl">Tailwind CSS</h3><!-- 18px -->
+  <h4 class="text-lg">Tailwind CSS</h4>
+  <h5 class="text-base">Tailwind CSS</h5><!-- 16px 1rem-->
+  <h6 class="text-sm">Tailwind CSS</h6>
+  <p class="text-xs">Tailwind CSS</p>
+
+
+  <!-- https://tailwindcss.com/docs/font-family -->
+  <!-- 기본적으로 3가지 타입 sans(기본) | serif | mono를 지원한다. -->
+  <!-- config설정에서 font-family를 확장할 수 있다. -->
+  <div class="my-8 space-y-3 text-2xl">
+    <p class="font-sans">가나다라마바사 ABCDEFGHIJKLMN opqrstuvwxyz 123467890</p>
+    <p class="font-serif">가나다라마바사 ABCDEFGHIJKLMN opqrstuvwxyz 123467890</p>
+    <p class="font-mono">가나다라마바사 ABCDEFGHIJKLMN opqrstuvwxyz 123467890</p>
+    <!-- 폰트명에 공백 있는 경우 _로 연결해야 한다. -->
+    <p class="font-['Gowun_Dodum']">가나다라마바사 ABCDEFGHIJKLMN opqrstuvwxyz 123467890</p>
+    <p class="font-['Nanum_Brush_Script']">가나다라마바사 ABCDEFGHIJKLMN opqrstuvwxyz 123467890</p>
+    <p class="font-['Poor_Story']">가나다라마바사 ABCDEFGHIJKLMN opqrstuvwxyz 123467890</p>
+  </div>
+
+  <!-- https://tailwindcss.com/docs/font-weight -->
+  <div class="my-8 space-y-3 text-2xl">
+    <p class="font-light">The quick brown fox jumps over the lazy dog.</p><!-- 300 -->
+    <p class="font-normal">The quick brown fox jumps over the lazy dog.</p><!-- 400 -->
+    <p class="font-medium">The quick brown fox jumps over the lazy dog.</p><!-- 500 -->
+    <p class="font-semibold">The quick brown fox jumps over the lazy dog.</p><!-- 600 -->
+    <p class="font-bold">The quick brown fox jumps over the lazy dog.</p><!-- 700 -->
+  </div>
+
+  <!-- rem 대비 상대크기 - html태그 지정 font-size가 기본(16px)이다. -->
+  <div id="parent" class="text-xl">
+    <p>Helloworld</p><!-- 부모요소의 font-size가 적용 -->
+    <p class="text-[32px]">Helloworld px</p>
+    <p class="text-3xl">Helloworld rem</p>
+  </div>
+</body>
+</html>

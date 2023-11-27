@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>HTML5 | Layout</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="js/tailwind.config.js"></script>
+  </head>
+  <body>
+    <div id="container" class="w-[960px] mx-auto bg-slate-200 grid grid-cols-3 auto-rows-3 p-4">
+      <header class="relative h-40 bg-slate-500 col-span-3 p-4">
+        <h2 class="text-2xl mb-4">Header</h2>
+        <nav class="absolute bottom-3 right-3">
+          <ul class="flex justify-end">
+            <li class="w-20 h-4 flex justify-center leading-4 border-r border-slate-600"><a class="hover:text-white px-2" href="#">Home</a></li>
+            <li class="w-20 h-4 flex justify-center leading-4 border-r border-slate-600"><a class="hover:text-white px-2" href="#">HTML5</a></li>
+            <li class="w-20 h-4 flex justify-center leading-4 border-r border-slate-600"><a class="hover:text-white px-2" href="#">CSS3</a></li>
+            <li class="w-20 h-4 flex justify-center leading-4 border-r border-slate-600"><a class="hover:text-white px-2" href="#">JQuery</a></li>
+            <li class="w-20 h-4 flex justify-center leading-4 border-r border-slate-600"><a class="hover:text-white px-2" href="#">Mobile</a></li>
+            <li class="w-20 h-4 flex justify-center leading-4 "><a class="hover:text-white px-2" href="#">Profile</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="content" class="col-span-2 bg-violet-400 p-4 h-[50vh]">
+        <article class="">
+          <h3 class="text-xl mb-4">Article1</h3>
+          <p>
+            동력은 역사를 끝까지 사라지지 생명을 사막이다. 귀는 풀이 맺어,
+            산야에 안고, 아니다. 아니한 가치를 끓는 어디 같은 간에 희망의 커다란
+            이것이다. 인생을 가장 어디 아니한 사랑의 석가는 몸이 교향악이다.
+          </p>
+        </article>
+        <article class="my-4">
+          <h3 class="text-xl mb-4">Article2</h3>
+          <p>
+            동산에는 살았으며, 반짝이는 불어 곳이 그들은 것이다.보라, 영원히
+            것이다. 행복스럽고 낙원을 옷을 하였으며, 살았으며, 아름다우냐?
+          </p>
+        </article>
+      </section>
+      <aside class="bg-rose-300 p-4">
+        <h3 class="text-xl mb-4">Aside</h3>
+      </aside>
+      <footer class="relative h-40 p-4 bg-blue-400 col-span-3">
+        <h3 class="text-xl mb-4">Footer</h3>
+        <p class="absolute bottom-4 inset-x-0 text-center">
+          Copyright 2017. <strong>shqkel.code</strong>. All rights
+          reserved.;
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

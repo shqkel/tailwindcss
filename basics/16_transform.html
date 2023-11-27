@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS | Transform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+</head>
+<body class="px-4">
+  <h1 class="text-3xl my-4">Transform</h1>
+  <div class="flex flex-col items-center">
+    <!-- https://tailwindcss.com/docs/translate -->
+    <img class="hover:translate-x-4 hover:-translate-y-4 w-80 my-4" src="images/flower1.PNG" alt="">
+    <!-- https://tailwindcss.com/docs/scale -->
+    <img class="scale-95 hover:scale-110 w-80 my-4" src="images/flower2.PNG" alt="">
+    <!-- https://tailwindcss.com/docs/rotate -->
+    <img class="-rotate-12 hover:rotate-[30deg] w-80 my-4" src="images/flower3.PNG" alt="">
+    <!-- 
+      https://tailwindcss.com/docs/skew 
+      - x축 기준으로 회전효과
+      - y축 기준으로 회전효과
+    -->
+    <img class="skew-y-12 w-80 my-4" src="images/flower4.PNG" alt="">
+  </div>
+
+
+
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

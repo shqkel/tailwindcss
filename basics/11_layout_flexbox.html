@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS | Layout - Flexbox</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+</head>
+<body class="px-2">
+  <h1 class="text-3xl my-4">Flexbox</h1>
+  <!-- 
+    flexbox (메인축/크로스축)
+
+    부모요소 flex-container
+      - display: flex | inline-flex
+      - flex-direction: row(기본값) | column
+      - justify-content: 메인축설정 flex-start(기본값) | center | flex-end | space-between | space-around | space-evenly
+      - align-items : 크로스축설정 stretch(기본값) | baseline | center | flex-start | flex-end
+      - flex-wrap: 줄바끔여부 nowrap(기본값) | wrap
+      - align-content: wrap속성이 지정된 여러축인 존재할때 적용.
+    자식요소 flex-item
+      - flex-shrink 
+      - flex-grow
+  -->
+  <!-- 
+    https://tailwindcss.com/docs/flex-direction
+    - flex-row
+    - flex-row-reverse	
+    - flex-col
+    - flex-col-reverse
+   -->
+   <!-- 
+    https://tailwindcss.com/docs/justify-content
+    - justify-normal	
+    - justify-start	
+    - justify-end	
+    - justify-center	
+    - justify-between	
+    - justify-around	
+    - justify-evenly	
+    - justify-stretch
+    -->
+  <!-- 
+    https://tailwindcss.com/docs/align-items 
+    - items-start
+    - items-end
+    - items-center
+    - items-baseline
+    - items-stretch
+  -->
+  <!-- 
+    https://tailwindcss.com/docs/flex-wrap
+    - flex-wrap
+    - flex-nowrap
+  -->
+  <!-- 
+    https://tailwindcss.com/docs/align-content
+    - content-normal
+    - content-center
+    - content-start
+    - content-end
+    - content-between
+    - content-around
+    - content-evenly
+    - content-baseline
+    - content-stretch
+   -->
+   
+   <ul class="bg-orange-300 p-4 my-4 h-[300px] flex justify-around items-center">
+    <li class="border border-black p-4 bg-[#ff4500] w-20">1</li>
+    <li class="border border-black p-4 bg-[#ff4500] w-20">2</li>
+    <li class="border border-black p-4 bg-[#ff4500] w-20">3</li>
+    <li class="border border-black p-4 bg-[#ff4500] w-20">4</li>
+    <li class="border border-black p-4 bg-[#ff4500] w-20">5</li>
+    <li class="border border-black p-4 bg-[#ff4500] w-20">6</li>
+    <li class="border border-black p-4 bg-[#ff4500] w-20">7</li>
+    <li class="border border-black p-4 bg-[#ff4500] w-20">8</li>
+    <li class="border border-black p-4 bg-[#ff4500] w-20">9</li>
+    <li class="border border-black p-4 bg-[#ff4500] w-20">10</li>
+  </ul>
+
+  <ul class="bg-orange-300 p-4 my-4 h-[500px] flex justify-center flex-wrap content-center">
+    <li class="border border-black p-4 m-1 bg-[#ff4500] w-32">1</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] w-32">2</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] w-32">3</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] w-32">4</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] w-32">5</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] w-32">6</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] w-32">7</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] w-32">8</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] w-32">9</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] w-32">10</li>
+  </ul>
+
+  <!-- 
+    https://tailwindcss.com/docs/flex-shrink 
+    - shrink (기본값) -> flex-shrink: 1; 작성할 필요 없음. container 공간에 따라 줄어든다.
+    - shrink-0 줄어들지 않음
+  -->
+  <ul class="bg-orange-300 p-4 my-4 flex justify-center flex-nowrap content-center">
+    <li class="border border-black p-4 m-1 bg-[#ff4500] w-32 ">1</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] w-64">2</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] w-32 shrink-0">3</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] w-32 ">4</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] w-32 ">5</li>
+  </ul>
+
+  <!-- 
+    https://tailwindcss.com/docs/flex-grow 
+    - grow -> flex-grow: 1; container를 넘지 않는 선에서 너비증가
+    - grow-0 (기본값) 지정한 너비에서 늘어나지 않음;
+  -->
+  <ul class="bg-orange-300 p-4 my-4 flex justify-center flex-nowrap content-center">
+    <li class="border border-black p-4 m-1 bg-[#ff4500] grow">1</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] grow">2</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] grow-0">3</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500] grow">4</li>
+    <li class="border border-black p-4 m-1 bg-[#ff4500]">5</li>
+  </ul>
+  
+</body>
+</html>
