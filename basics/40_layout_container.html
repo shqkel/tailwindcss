@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS | container</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+</head>
+<body>
+  <h1 class="text-3xl m-4">container</h1>
+  <!--
+    container None width: 100%;
+    sm:container (640px)	max-width: 640px;
+    md:container (768px)	max-width: 768px;
+    lg:container (1024px)	max-width: 1024px;
+    xl:container (1280px)	max-width: 1280px;
+    2xl:container (1536px)	max-width: 1536px;
+  -->
+  <div class="container mx-auto my-8 h-40 bg-slate-400 p-8">None</div>
+  <div class="sm:container mx-auto my-8 h-40 bg-slate-400 p-8">sm</div>
+  <div class="md:container mx-auto my-8 h-40 bg-slate-400 p-8">md</div>
+  <div class="lg:container mx-auto my-8 h-40 bg-slate-400 p-8">lg</div>
+  <div class="xl:container mx-auto my-8 h-40 bg-slate-400 p-8">xl</div>
+  <div class="2xl:container mx-auto my-8 h-40 bg-slate-400 p-8">2xl</div>
+</body>
+</html>
